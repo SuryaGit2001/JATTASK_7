@@ -1,0 +1,34 @@
+package guviproject1;
+
+import java.util.Scanner;
+
+public class Exception1 {
+
+	public static void main(String[] args) {
+		 
+		
+		Scanner a = new Scanner(System.in);
+		
+		try {
+			
+			System.out.println("Enter two numbers \n ");
+			
+		int c= a.nextInt();
+		int b= a.nextInt();
+		int value= c/b;
+	
+	System.out.println("Value is "+value);}
+		
+		catch(Exception e) {
+			
+			System.out.println("ERROR: wrong input ");
+		}
+		
+		/*
+		 * finally { System.out.println("code over"); }
+		 */
+		
+a.close();
+	}
+
+}
