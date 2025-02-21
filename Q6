@@ -1,0 +1,36 @@
+package guviproject1;
+
+import java.util.*;
+
+public class TreeMap1 {
+
+	    public static void main(String[] args) {
+	        
+	        TreeMap<Integer, String> employees = new TreeMap<>();
+
+	        
+	        employees.put(101, "Surya");
+	        employees.put(102, "Papa");
+	        employees.put(103, "Maya");
+	        employees.put(104, "Sanjey");
+	        employees.put(105, "Ajmer");
+
+	       
+	        Collection<String> employeeNames = employees.values();
+
+	    
+	        List<String> sortedNames = new ArrayList<>(employeeNames);
+
+	      
+	        Collections.sort(sortedNames);
+
+	   
+	        System.out.println("Employee names in alphabetical order:");
+	        for (String name : sortedNames) {
+	            System.out.println(name);
+	        }
+	    }
+	}
+
+
+
