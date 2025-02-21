@@ -1,0 +1,29 @@
+package guviproject1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class List1 {
+
+	public static void main(String[] args) {
+		
+		List<String> mylist= new ArrayList<>();
+		
+	mylist.add("Surya");
+	mylist.add("Maya");
+	mylist.add("Manju");
+	mylist.add("Sanjay");
+	
+		System.out.println("List before removing:"+ mylist);
+		
+		
+		 for(int i=0;i<4;i++) { 
+			 
+			 mylist.remove(0);
+		  
+		  }
+		 
+		System.out.println("List after removing:" + mylist);
+
+}
+}
