@@ -1,0 +1,25 @@
+package guviproject1;
+import java.util.*;
+
+	public class ListToArrayExample {
+	    public static void main(String[] args) {
+	       
+	        List<String> fruitList = new ArrayList<>();
+	        fruitList.add("Apple");
+	        fruitList.add("Banana");
+	        fruitList.add("Cherry");
+	        fruitList.add("Date");
+
+	        
+	        String[] fruitArray = new String[fruitList.size()]; // Create an array with the same size as the list
+	        fruitArray = fruitList.toArray(fruitArray);
+
+	       
+	        System.out.println("List converted to Array:");
+	        for (String fruit : fruitArray) {
+	            System.out.println(fruit);
+	        }
+	    }
+	}
+
+
