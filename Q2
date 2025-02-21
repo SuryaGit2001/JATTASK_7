@@ -1,0 +1,42 @@
+package guviproject1;
+
+import java.util.Scanner;
+
+public class Exception2 {
+
+	public static void main(String[] args) {
+		
+		int array[]= {1,2,3,4,5,5,6,6,9,10};
+		Scanner a = new Scanner(System.in);
+		
+		try {
+			
+			System.out.println("Enter the index to find the value of it: \n");
+			
+			int c= a.nextInt();
+			
+			System.out.println("the value for given place is "+ array[c]);
+		}
+		catch(Exception e) {
+			System.out.println("Invalid index to find");
+		}
+	/*	finally {System.out.println("code done");*/
+		
+		
+		    
+		        String str = "Hello, World!";
+		       
+		        try {
+		        	System.out.println("Enter the index to find the value in the string: \n");
+					
+					int d= a.nextInt();
+		            char character = str.charAt(d);
+		            System.out.println(character);
+		        } catch (StringIndexOutOfBoundsException e) {
+		            System.out.println("Invalid index to find the string");
+		        }
+		    }
+		}
+
+
+
